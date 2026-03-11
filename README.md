@@ -148,7 +148,7 @@ IEEE Format Report (6 pages: Intro, Methods, Results, Limitations)
 PowerPoint w/ Audio
 
 ### Limitations and Future Work
-- Limitations: Small dataset; no real-time data support; assumes balanced classes.
+- Limitations: Small dataset; accuracy of models are not as expected.
 - Future: Add models, fine-tune options, deploy to cloud, handle imbalanced data with SMOTE.
 
 -----
