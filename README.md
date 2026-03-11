@@ -114,7 +114,7 @@ Evaluation:
 - Silhouette Scores for clustering
 
 ### 🚀 Streamlit Deployment
-Live Demo: https://your-app.streamlit.app
+Live Demo: [ml-foundation-projects](https://ml-foundation-projects.streamlit.app/)
 
 Features:
 - Input features for predictions
