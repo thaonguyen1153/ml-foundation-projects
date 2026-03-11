@@ -9,7 +9,6 @@ env/
 st_env/
 
 # Data/Models
-data/
 reports/
 .ipynb_checkpoints/
 .vscode
