@@ -12,3 +12,4 @@ data/
 models/
 reports/
 .ipynb_checkpoints/
+.vscode
