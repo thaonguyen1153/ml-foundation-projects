@@ -126,7 +126,7 @@ bash
 streamlit run streamlit/ml-app.py --server.port 8501
 # Deploy: Connect to GitHub → Streamlit Cloud
 ``` 
-### 📈 Code Quality (Level 4 Rubric Compliance)
+### 📈 Code Quality 
 - **Modularization**: 7 reusable modules, single pipeline
 - **Folder Structure**: Professional VS Code organization
 - **Logging**: logging.INFO throughout with file rotation
