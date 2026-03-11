@@ -1,0 +1,14 @@
+﻿# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*\.class
+
+# Virtual environments
+venv/
+env/
+
+# Data/Models
+data/
+models/
+reports/
+.ipynb_checkpoints/
