@@ -42,10 +42,10 @@ ml-foundation-projects/
 │   ├── processed/            # Cleaned CSVs post-preprocessing
 │   └── external/             # Public datasets if needed
 ├── notebooks/                # Converted/refactored notebooks - original notebooks
-│   ├── 01_loan_eligibility.py
-│   ├── 02_real_estate.py
-│   ├── 03_ucla_nn.py
-│   └── 04_clustering.py
+│   ├── 01_real_estate.py
+│   ├── 02_loan_eligibility.py
+│   ├── 03_clustering.py
+│   └── 04_neural_network.py
 ├── src/                      # Reusable modules (core framework)
 │   ├── __init__.py
 │   ├── config.py             # Paths, seeds, thresholds (e.g., admit_chance=0.8)
@@ -152,8 +152,6 @@ PowerPoint w/ Audio
 - Future: Add models, fine-tune options, deploy to cloud, handle imbalanced data with SMOTE.
 
 -----
-Author:
-
-Thao Nguyen - Contact: nguyenthi.ngocthao@gmail.com or nguy153@algonquinlive.com | CST2216 W26
+Author: **Thao Nguyen** - Contact: nguyenthi.ngocthao@gmail.com or nguy153@algonquinlive.com | CST2216 W26
 
 Built with ❤️ for production ML deployment
