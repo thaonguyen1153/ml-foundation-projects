@@ -142,16 +142,16 @@ See requirements.txt.
 [ML-foundation-projects](https://github.com/thaonguyen1153/ml-foundation-projects)
 
 ### 📄 Project Report
-IEEE Format Report (6 pages: Intro, Methods, Results, Limitations)
+[IEEE Format Report](reports/report.pdf)
 
 ### 🎤 Presentation
-PowerPoint w/ Audio
+[PowerPoint w/ Audio](reports/present.mp4) 
 
 ### Limitations and Future Work
-- Limitations: Small dataset; accuracy of models are not as expected.
-- Future: Add models, fine-tune options, deploy to cloud, handle imbalanced data with SMOTE.
+- Limitations: Small dataset; accuracy of models are not as expected, model can have generalization limit.
+- Future: Add models, fine-tune options, deploy to cloud.
 
 -----
 Author: **Thao Nguyen** - Contact: nguyenthi.ngocthao@gmail.com or nguy153@algonquinlive.com | CST2216 W26
 
-Built with ❤️ for production ML deployment
+Built with ❤️
