@@ -10,6 +10,7 @@ st_venv/
 
 # Data/Models
 data/processed
-reports/
+reports/figures
+reports/logs
 .ipynb_checkpoints/
 .vscode
