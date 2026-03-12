@@ -6,9 +6,10 @@ __pycache__/
 # Virtual environments
 venv/
 env/
-st_env/
+st_venv/
 
 # Data/Models
+data/processed
 reports/
 .ipynb_checkpoints/
 .vscode

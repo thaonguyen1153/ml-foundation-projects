@@ -538,14 +538,28 @@ def runProjectTab(project, tabData):
                         st.metric("Suggested k", analysis["best_k"])
                         st.metric("Max Silhouette", f"{analysis['best_silhouette']:.3f}")
                     
+                    # show diagrams
+                    col1, col2 = st.columns(2)
+                    elbowPath = os.path.join(
+                        REPORT_DIR, "imgs", "elbow.png"
+                    )
+                    silhouettePath = os.path.join(
+                        REPORT_DIR, "imgs", "silhouette.png"
+                    )
                     # Elbow plot
-                    plotElbow(analysis["k_range"], analysis["inertias"], os.path.join(REPORT_DIR, "imgs", "elbow.png"))
-                    st.image("elbow.png", caption="Elbow Method")
+                    plotElbow(analysis["k_range"], analysis["inertias"], elbowPath)
+                    #st.image(elbowPath, caption="Elbow Method")
                     
                     # Silhouette plot
-                    plotSilhouette(analysis["k_range"], analysis["silhouette_scores"], os.path.join(REPORT_DIR, "imgs", "silhouette.png"))
-                    st.image("silhouette.png", caption="Silhouette Scores")
+                    plotSilhouette(analysis["k_range"], analysis["silhouette_scores"], silhouettePath)
+                    #st.image(silhouettePath, caption="Silhouette Scores")
                     
+                    with col1:
+                        st.image(elbowPath, caption="Elbow Method")
+
+                    with col2:
+                        st.image(silhouettePath, caption="Silhouette Scores")
+                        
                     st.info(f"**Suggested: Use k={analysis['best_k']}**")
             else:
                 st.warning("Need numeric features for analysis")

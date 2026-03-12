@@ -42,10 +42,14 @@ def plotElbow(k_range, inertias, save_path):
     plt.xlabel("Number of Clusters (k)")
     plt.ylabel("Inertia")
     plt.title("Elbow Method for Optimal k")
-    plt.savefig(save_path)
-    plt.close()
-    logger.info(f"Saved elbow plot: {save_path}")
-
+    try:
+        plt.savefig(save_path)
+    except Exception as e:
+        logger.error(f"Error saving elbow plot to {save_path}: {e}")
+    else:
+        logger.info(f"Saved elbow plot: {save_path}")
+    finally:
+        plt.close()
 
 def plotSilhouette(k_range, scores, save_path):
     """Plot silhouette scores."""
@@ -54,7 +58,11 @@ def plotSilhouette(k_range, scores, save_path):
     plt.xlabel("Number of Clusters (k)")
     plt.ylabel("Silhouette Score")
     plt.title("Silhouette Analysis for Optimal k")
-    plt.savefig(save_path)
-    plt.close()
-    logger.info(f"Saved silhouette plot: {save_path}")
+    try:
+        plt.savefig(save_path)
+    except Exception as e:
+        logger.error(f"Error saving silhouette plot to {save_path}: {e}")
+    else:
+        logger.info(f"Saved silhouette plot: {save_path}")
+    finally:        plt.close()
     
